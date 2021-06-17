@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import rssParser from 'rss-parser';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +12,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+fetch('http://www.nasa.gov/rss/dyn/breaking_news.rss')
+  .then((response) => response.text())
+  .then((responseData) => rssParser.parse(responseData))
+  .then(ress => console.log(ress))
 reportWebVitals();
