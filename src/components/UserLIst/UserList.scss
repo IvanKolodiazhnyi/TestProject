@@ -1,0 +1,77 @@
+.users {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+
+  color: white;
+
+  &__search {
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+    border: 2px solid darkorange;
+
+    font-size: 20px;
+    outline: 0;
+  }
+
+  &__buuton {
+    margin-left: 5px;
+    height: 30px;
+
+    border: 2px solid darkorange;
+  }
+
+  &__list {
+    padding: 0;
+    max-width: 500px;
+    list-style: none;
+    color: black;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid darkorange;
+    border-radius: 3px;
+    background-color: darkorange;
+    flex-direction: column;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &__email {
+    margin-bottom: 10px;
+  }
+
+  &__choose {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+
+    outline: 0;
+    border: 1px solid darkorange;
+
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: darkred;
+    }
+
+    &--active {
+      background-color: darkred;
+    }
+  }
+}
+
+.louding {
+  color: white;
+}

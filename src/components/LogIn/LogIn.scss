@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  height: 100px;
+  width: 300px;
+  margin: 200px auto;
+  justify-content: space-around;
+  flex-direction: column;
+
+  &__text {
+    margin-bottom: 10px;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: red;
+    }
+  }
+
+  &__password {
+    margin-bottom: 20px;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: red;
+    }
+  }
+
+  &__submit {
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+
+    font-size: 20px;
+    color: white;
+  }
+}
