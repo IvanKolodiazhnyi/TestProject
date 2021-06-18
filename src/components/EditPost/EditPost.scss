@@ -1,0 +1,35 @@
+.form_submit {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin: 20px 0;
+  height: 40px;
+  width: 250px;
+  border: 2px solid darkorange;
+
+  font-size: 20px;
+  outline: 0;
+}
+
+.textarea {
+  height: 100px;
+  width: 500px;
+  resize: none;
+  border: 2px solid darkorange;
+
+  font-size: 20px;
+  outline: 0;
+}
+
+
+.submit__button {
+  margin-top: 10px;
+  width: 100px;
+
+  height: 30px;
+
+  border: 2px solid darkorange;
+}

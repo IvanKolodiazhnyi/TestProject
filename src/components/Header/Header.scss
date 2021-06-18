@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 60px;
+
+  background-color: darkorange;
+
+  &__welcom {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__signIn {
+    padding: 10px;
+    background-color: darkred;
+
+    border: 1px solid black;
+    color: white;
+
+    cursor: pointer;
+  }
+
+  &__signOut {
+    padding: 10px;
+    background-color: darkred;
+
+    border: 1px solid black;
+    color: white;
+
+    cursor: pointer;
+  }
+}
